@@ -1,0 +1,70 @@
+  
+#modalBtn {
+    position: fixed;
+    bottom: 120px;
+    right: 100px;
+    border-radius: 50%;
+    background: #004892;
+    border: 0;
+    color: #fff;
+    font-size: 4.0rem;
+    width: 6.0rem;
+    height: 6.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    p {
+        padding-bottom: 5px;
+        font-size: 4rem;
+    }
+}
+
+
+.input__form {
+    padding-top: 3em;
+    input[type=text] {
+        width: 20rem;
+        height: 4.0rem;
+        outline: none;
+        color: #7c7c7c;
+        font-size: 1.4rem;
+        border: 1px solid #cacaca;
+        border-radius: 2px;
+    }
+    input[type=text]:focus {
+        color: #000;
+        border: 1px solid #004892;
+    }
+}
+
+.input__form--content{
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-between;
+    
+        // background-image:url('../assets/icons/Search.svg');
+        // background-repeat: no-repeat;
+        // background-position: 97% center;
+}
+
+.addWarehouse__btn {
+    float: right;
+}
+
+
+label {
+    padding-top: 1em;
+}
+
+.addWarehouse__btn {
+    background: #004892;
+    border: 0;
+    border-radius: 3px;
+    width: 13.1rem;
+    height: 3.8rem;
+    color: #fff;
+}
+
+.addWarehouse__btn:hover {
+    background: #003B77;
+}

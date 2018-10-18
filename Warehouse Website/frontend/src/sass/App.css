@@ -1,0 +1,17 @@
+.site--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site--left {
+  width: 20%;
+  background: #004892;
+  padding: 2em 0 1em 0;
+}
+
+.site--right {
+  width: 100%;
+  background: #f7f7f7;
+}
+/*# sourceMappingURL=App.css.map */

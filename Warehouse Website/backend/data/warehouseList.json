@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1001,
+        "warehouseName": "Warehouse Number 1",
+        "type": "Industrial, Automotive, Heavy Industry",
+        "address": 
+            {
+                "street": "123 Main Street West",
+                "city": "Toronto",
+                "country": "Canada",
+                "postalCode": "M6J 2H2"
+            },
+        "contact": 
+            {
+                "name": "Mara Weinberg",
+                "occupation": "Warehouse Manager",
+                "phone": "+1 416 678 2345",
+                "email": "mweinberg@instack.com"
+            }
+        
+    },
+    {
+        "id": 1002,
+        "warehouseName": "Warehouse Number 2",
+        "type": "Industrial, Automotive, Heavy Industry",
+        "address": 
+            {
+                "street": "123 Main Street West",
+                "city": "Toronto",
+                "country": "Canada",
+                "postalCode": "M6J 2H2"
+            },
+        "contact": 
+            {
+                "name": "Mara Weinberg",
+                "occupation": "Warehouse Manager",
+                "phone": "+1 416 678 2345",
+                "email": "mweinberg@instack.com"
+            }
+    },
+    {
+        "id": 1003,
+        "warehouseName": "Warehouse Number 3",
+        "type": "Industrial, Automotive, Heavy Industry",
+        "address": 
+            {
+                "street": "123 Main Street West",
+                "city": "Toronto",
+                "country": "Canada",
+                "postalCode": "M6J 2H2"
+            },
+        "contact": 
+            {
+                "name": "Mara Weinberg",
+                "occupation": "Warehouse Manager",
+                "phone": "+1 416 678 2345",
+                "email": "mweinberg@instack.com"
+            }   
+    },
+    {
+        "id": 1004,
+        "warehouseName": "Warehouse Number 4",
+        "type": "Industrial, Automotive, Heavy Industry",
+        "address": 
+            {
+                "street": "123 Main Street West",
+                "city": "Toronto",
+                "country": "Canada",
+                "postalCode": "M6J 2H2"
+            },
+        "contact": 
+            {
+                "name": "Mara Weinberg",
+                "occupation": "Warehouse Manager",
+                "phone": "+1 416 678 2345",
+                "email": "mweinberg@instack.com"
+            }   
+    }
+]

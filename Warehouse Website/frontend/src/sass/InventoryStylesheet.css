@@ -1,0 +1,385 @@
+
+  .main-wrapper {
+    background-color: #f7f7f7;
+    height: 100vh;
+  }
+  
+  .main-title-div {
+    display: flex;    
+    align-items: center;
+    padding-right: 7em;
+  }
+  
+  .inventory-wrapper {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 72.5vw;
+    border: 1px solid #7C7C7C;
+    margin-bottom: 1em;
+  }
+  
+  
+  .inventory-header {
+    padding-left: 2em;
+    color: #3A3A3A;
+  }
+  
+  .filter-button {
+    align-self: flex-end;
+    color: #004892;
+    margin-left: auto;
+  }
+  
+  .inventory-title-div {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+  }
+  
+  .inventory-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 2em;
+    margin-right: 0.25em;
+    border: 1px sold #7C7C7C;
+  }
+  
+  .inventory-div:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+  
+  .item-div {
+    width: 22vw;
+    padding-right: 0.25em;
+  }
+  
+  .product-name-title {
+    width: 22vw;
+    color: #3A3A3A;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+  }
+  
+  .product-name {
+    color: #004892;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 22vw;
+    padding-right: 0.5em;
+    margin-bottom: 0;
+  }
+  
+  .product-description {
+    display: flex;
+    justify-content: flex-start;
+    width: 22vw;
+    color: #3A3A3A;
+    font-size: 12px;
+    margin-top: 0.25em;
+  }
+  
+  .last-ordered {
+    color: #3A3A3A;
+    font-size: 12px;
+    width: 14vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .last-ordered-title {
+    color: #3A3A3A;
+    width: 12vw;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .location-title {
+    color: #3A3A3A;
+    width: 10vw;
+    text-transform: uppercase;
+    padding-right: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 1.2em;
+  }
+  
+  .location {
+    width: 10vw;
+    color: #3A3A3A;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .quantity-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vw;
+    color: #3A3A3A;
+    text-transform: uppercase;
+  }
+  
+  .quantity {
+    width: 12vw;
+    color: #3A3A3A;
+    font-size: 12px;
+    padding-right: 2.8em;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+  }
+  
+  .status {
+    color: #3A3A3A;
+    font-size: 12px;
+    width: 10vw;
+  }
+  
+  .status-title {
+    color: #3A3A3A;
+    text-transform: uppercase;
+    width: 10vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .filter-div {
+    color: #3A3A3A;
+    width: 10vw;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  .inventory a {
+    text-decoration: none;
+  }
+  
+  a:nth-child(even) > * {
+    background-color: #FFFFFF;
+  } 
+  
+  
+  /*below is the CSS code when looking at a specfic inventory item*/
+  
+  
+  .summary-header {
+    color: #004892;
+  }
+  
+  .new-order-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 95%;
+    padding-right: 2em;
+    padding-top: 2em;
+  }
+  
+  .new-order-button {
+    width: 131px;
+    height: 38px;
+    background-color: #004892;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  .new-order-text {
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  
+  .details-div {
+    border: 1px solid #7C7C7C;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 75vw;
+    background-color: #FFFFFF;
+  
+  }
+  
+  .details-first-div {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .summary-header {
+    margin-left: 1em;
+  }
+  
+  .header-description {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 1em;
+  }
+  
+  .description-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header-last-ordered {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 1em;
+  }
+  
+  .last-ordered-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .ordered-by-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header-ordered-by {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .reference-number-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header-reference-number {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .item-details-primary-wrapper {
+    background-color: #f7f7f7;
+    height: 100vh;
+  }
+  
+  .header-product-category {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .product-category-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .quantity-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header-quantity {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .location-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header-location {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;  
+  }
+  
+  .status-div {
+    display: flex;
+    justify-content: flex-start;  
+  }
+  
+  .header-status {
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 12px;  
+  }
+  
+  .back-btn-div {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .back-btn {
+    padding-left: 2em;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a {
+    color: #3A3A3A;
+  }
+  
+  .text-product-description {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-last-ordered {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-ordered-by {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-reference-number {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-product-category {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-quantity {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-location {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+  
+  .text-status {
+    font-size: 12px;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+  }
+
+
+.filteredInventory__content {
+  height: 100vh;
+}
+

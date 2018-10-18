@@ -1,0 +1,70 @@
+.main__content {
+  margin: 1em 2em;
+}
+
+.main__content--heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 1em 3em 0em 3em;
+}
+
+.main__content--heading h4 {
+  color: #155396;
+}
+
+.main__content--warehouses {
+  margin: 0em 2em;
+}
+
+.section__warehouse {
+  background: #fff;
+  border: 1px solid #cacaca;
+  margin: 1em 0;
+  padding: 2em;
+}
+
+.section__warehouse h2 {
+  color: #155396;
+  font-weight: 700;
+}
+
+.warehouse__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.warehouse__content h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.warehouse__content p, .warehouse__content span {
+  color: #7c7c7c;
+}
+
+.warehouse__content--left,
+.warehouse__content--middle,
+.warehouse__content--right {
+  width: calc(100% / 3);
+}
+
+label,
+input {
+  display: block;
+}
+/*# sourceMappingURL=Warehouse.css.map */

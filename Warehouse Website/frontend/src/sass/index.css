@@ -1,0 +1,29 @@
+/* index is above App */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url(../assets/fonts/Avenir\ Next.ttc);
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {font-size: 62.5%;}
+
+body {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: normal;
+}
+
+h1 {font-size: 2.4rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.4rem;}
+p, span {font-size: 1.2rem;}
+
+h1, h2, h3, h4, p, span {margin: 0;}
+
+input, button {outline: none;}
+
+a {text-decoration: none; color: #000;}
+a:hover{color: #003B77;}
