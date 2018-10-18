@@ -1,0 +1,6 @@
+# list of files it needs to ignore
+
+.env
+.vscode
+node_modules/
+note-to-self.js

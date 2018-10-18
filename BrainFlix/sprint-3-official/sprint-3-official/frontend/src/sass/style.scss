@@ -1,0 +1,694 @@
+// Variables -------------------------
+
+$primary-font: 'Roboto', sans-serif;
+$line-height: 1.5;
+
+// Mixin 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// Utilities -------------------------
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+  font-family: $primary-font;
+}
+
+h1 {font-size: 2.0rem;}
+h2 {font-size: 1.8rem; font-weight: 500;} 
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.4rem; font-weight: 500;}
+h5 {font-size: 1.3rem;}
+p, span {font-size: 1.2rem; line-height: $line-height;} //Form Help Text
+// 10px: Thumbnail hover
+
+h1, h2, h3, h4, h5, p {margin: 0;}
+
+
+
+// Header -----------------------------------
+header {
+  background: #fff;
+  box-shadow: 0px 5px 20px -8px rgba(17,17,17,0.1);   
+}
+.header {
+  @include flex-space-between();
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 10em;
+}
+
+.header__form {
+  @include flex-center();
+  border-radius: 2px;
+  border: #d4d4d4 solid 1px;
+  input[type=text] {
+    outline: none;
+    width: 30em;
+    height: 3em;
+    padding-left: 1em;
+    border: 0;
+    border-right: #d4d4d4 solid 1px;
+  }
+  input[type=text]:focus {
+    border: 1px solid #0095FF;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    background: #f8f8f8;
+    border: 0;
+    height: 3em;
+    padding: 0 3em;
+  }
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user__profile--share {
+  margin-right: 5em;
+}
+
+.user__profile--img,
+.mainVideo__channelInfo--thumbnail,
+.comment__section--image,
+.comments__user--image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  // position: relative;
+  overflow: hidden;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+// End of header section -------------------------
+
+
+
+// Site Content -------------------------
+
+// this is the wrapper for the content only (main and aside)
+.content__wrapper {
+  padding: 4em 10em;
+  @include flex-space-between();
+}
+
+
+// main section starts here ----------------------
+main {
+  width: 65%;
+  // width: 79.2rem;
+}
+
+.main__video {
+  object-fit: cover;
+}
+.main__video [poster]{
+  height:100%;
+  width:100%;
+}
+
+// this is the primary info section for the main video
+.mainVideo__info--primaryInfo h2 {
+  padding: 1em 0;
+}
+
+.mainVideo__stats {
+  @include flex-space-between();
+  color: #888;
+  font-weight: 500;
+}
+
+// .mainVideo__stats--buttons {
+//   width: 30%;
+// }
+
+.mainVideo__stats--buttons,
+.stats__button {
+  @include flex-space-between();
+  align-content: center;
+  span {
+    padding: 0px 10px 0 5px;
+  }
+}
+
+// secondary info section for the main video
+.mainVideo__info--secondaryInfo {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 3em 0 1em 0;
+  margin: 2em 0;
+}
+
+.mainVideo__channelInfo {
+  @include flex-space-between();
+  align-content: center;
+}
+
+.mainVideo__channelInfo--user {
+  width: 65%;
+  margin-top: 5px;
+  p {
+    color: #888;
+  }
+}
+.mainVideo__subscribe--button {
+  width: 20%;
+  background: #0095FF;
+  border-radius: 2px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  padding: 0 12px;
+  span {
+    color: #d4d4d4;
+  }
+}
+.mainVideo__description {
+  padding: 2em 7.3em;
+  h5 {
+    padding-top: 2em;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+.mainVideo__channelInfo--thumbnail {
+  background: #d4d4d4;
+}
+
+// comments section
+.comments__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comments__input {
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.comments__input--content {
+  width: 100%;
+  padding-left: 1em;
+  input[type=text] {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #d4d4d4;
+    width: 100%;
+    margin-top: 1em;
+  }
+  input[type=text]:focus {
+    border-bottom: 2px solid #111;
+  }
+}
+
+// .comment__input--form {
+//   border: 0;
+//   border-bottom: 1px solid #d4d4d4;
+//   width: 100%;
+//   margin-top: 1em;
+// }
+
+.comment__section {
+  display: flex;
+  padding: 2em 0;
+}
+
+.comment__section--info {
+  padding-left: 2em;
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.comments__input--buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel__button {
+  padding: 1em 2em;
+  background: #fff;
+  border-radius: 2px;
+  border: 0;
+  color: #111;
+  font-weight:500;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-right: 1px;
+}
+
+.comment__button {
+  padding: 1em 2em;
+  background: #B2DFFF;
+  border-radius: 2px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.cancel__button:focus,
+.comment__button:focus {
+  outline:0;
+}
+
+.cancel__button:hover {
+  background: rgba(17, 17, 17, 0.1);
+}
+
+.comment__button:hover {
+  background: #0095FF;
+}
+
+.comment__section--top {
+  display: flex;
+  p {
+    padding-left: 1em;
+    color: #888888;
+  }
+}
+
+
+
+
+
+// end of main section ---------------------------
+
+
+// this is the up next videos section
+aside {
+  width: 33%;
+  a {
+    text-decoration: none;
+  }
+}
+
+.upNext__videos {
+  padding-bottom: 1em;
+}
+
+// this is styling one up next video element
+.videoList__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 0;
+}
+
+video {
+  width: 100%;
+}
+
+// this is styling the left side of the "up next" videos
+// which is the thumbnail of the video
+.videoList__item--left {
+  width: 40%;
+  position: relative;
+  img {
+    width: 100%;
+    // height: 9em;
+    // width: 14em;
+  }
+  // this is the duration timestamp
+  p {
+    font-size: 1.0rem;
+    position: absolute;
+    bottom: 7px;
+    right: 5px;
+    background: rgba(17, 17, 17, 0.8);
+    padding: 1px 3px;
+    color: #fff;
+  }
+}
+
+// this is styling the right side of the "up next" videos
+// which includes the title, channel, views
+.videoList__item--right {
+  width: 60%;
+  padding-left: 1em;
+}
+
+.videoList__item--info {
+  h4 {
+    color: #000;
+  }
+  p {
+    color: #888;
+  }
+}
+
+// Upload page starts here
+.upload__video--wrapper {
+  height: 100vh;
+  background: #F1F1F1;
+  padding: 1em;
+}
+.upload__video--content {
+  background: #fff;
+  margin: 5em 15em;
+  padding: 2em;
+  @include flex-space-between();
+  align-items: flex-start;
+  border: 1px solid #d4d4d4;
+}
+
+.upload__form--content {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 1.3rem;
+    padding: 2em 0 0.5em 0;
+  }
+  input[type=text], textarea {
+    outline: none;
+  }
+  input[type=text]:focus, textarea:focus {
+    border: 1px solid #0095ff;
+  }
+
+
+}
+
+.upload__form {
+  padding: 0 2em;
+}
+
+.upload__video--status,
+.upload__video--button {
+  width: 15%;
+}
+
+.upload__video--status p {
+  color: #888;
+}
+
+.upload__video--thumbnail {
+  height: 9em;
+  width: 14em;
+}
+
+.upload__video--title,
+.upload__video--description,
+.upload__video--tags {
+  background: #f8f8f8;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  color: #111;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  width: 38.5rem;
+  height: 3.5rem;
+  padding: 0 1em;
+}
+
+.upload__video--description {
+  padding: 1em 1em 5em 1em;
+}
+
+.upload__form--progressBar {
+  height: 6px;
+  width: 50vw;
+  background: linear-gradient(90deg, #0095ff 80%, #d4d4d4 80%);
+}
+
+.upload__button {
+  padding: 0.5em 2em;
+  background: #0095FF;
+  border-radius: 2px;
+  border: 0;
+  color: #fff;
+}
+
+.progressBar__status {
+  padding: 2em 0;
+  span {
+    color: #0095FF;
+  }
+}
+
+// media query
+@media (max-width: 1190px) {
+  .upload__form--progressBar {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 1090px) {
+  .upload__form--content {
+    input, textarea {
+      width: 20em;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .upload__video--content {
+    margin: 5em 6em;
+  }
+}
+
+@media (max-width: 950px) {
+  .logo,
+  .upload {
+    width: 80%;
+  }
+  .user__profile--img {
+    width: 30px;
+    height: 30px;
+  }
+  .user__profile--share {
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__form {
+    input {
+      width: 25em;
+      height: 2em;
+    }
+    button {
+      height: 3em;
+      padding: 0px 2em;
+    }
+  }
+  .form__searchBtn img {
+    width: 80%;
+  }
+  .content__wrapper {
+    flex-direction: column;
+  }
+  main,
+  aside {
+    width: 100%;
+  }
+  aside {
+    border-top: 1px solid #d4d4d4;
+    padding-top: 4em;
+    margin-top: 3em;
+  }
+  .videoList__item--left {
+    width: 25%;
+  }
+}
+
+
+@media (max-width: 865px) {
+  .header {
+    padding: 2em 4em;
+  }
+  .form__inputForm {
+    width: 20em;
+    height: 2em;
+  }
+}
+
+@media (max-width: 790px) {
+  .upload__video--content {
+    margin: 5em 2em;
+  }
+}
+
+@media (max-width: 730px) {
+  .header__form {
+    input[type=text] {
+      width: 20em;
+      height: 2em;
+    }
+    input[type=text]:focus {
+      border: 1px solid #0095FF;
+    }
+    button {
+      height: 2em;
+    }
+  }
+  .form__searchBtn {
+    height: 2em;
+  }
+}
+
+@media (max-width: 780px) {
+  .content__wrapper {
+    padding: 4em 8em;
+  }
+}
+
+@media (max-width: 730px) {
+  .form__inputForm {
+    width: 18em;
+  }
+}
+
+@media (max-width: 700px) {
+  .upload__video--thumbnail {
+    height: 7em;
+    width: 10em;
+  }
+}
+
+@media (max-width: 680px) {
+  .content__wrapper {
+    padding: 4em 6em;
+  }
+}
+
+@media (max-width: 620px) {
+  .upload__video--content {
+    flex-direction: column;
+  }
+  .upload__form {
+    padding: 4em 0 0 0;
+  }
+  .upload__form--progressBar {
+    width: 65vw;
+  }
+  .upload__form--content input, 
+  .upload__form--content textarea {
+    width: 30em;
+  }
+  .upload__video--thumbnail {
+    height: 12em;
+    width: 18em;
+  }
+  .progressBar__status {
+    padding: 2em 0 5em 0;
+  }
+  .upload__video--button {
+    padding-top: 4em;
+  }
+  .mainVideo__description {
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .user__profile--share {
+    margin: 0;
+    margin-right: 0;
+  }
+  .header__form input[type=text] {
+    width: 14em;
+  }
+  .content__wrapper {
+    padding: 4em 6em;
+  }
+  .mainVideo__subscribe--button {
+    width: 28%;
+  }
+  .content__wrapper {
+    padding: 4em;
+  }
+  .mainVideo__channelInfo--user {
+    width: 60%;
+    padding-left: 2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__form {
+    margin-right: 4em;
+  }
+  .logo {
+    width: 73%;
+  }
+}
+
+@media (max-width: 530px) {
+  .user__profile--img {
+    width: 22px;
+    height: 22px;
+  }
+  .user__profile--share {
+    width: 50%;
+  }
+  .header {
+    padding: 2em;
+  }
+}
+
+@media(max-width: 480px){
+  .upload__form--content {
+    input, textarea {
+      width: 22em;
+    }
+  }
+}
+@media(max-width: 430px) {
+  .mainVideo__subscribe--button {
+    padding-left: 1em;
+    span {
+      display: none;
+    }
+  }
+  .logo {
+    padding-right: 2em;
+    width: 70px;
+  }
+  .header {
+    padding: 2em 1em;
+  }
+  .header__right {
+    padding-right: 1em;
+  }
+  .header__form {
+    margin-right: 0;
+    input {
+      width: 11em;
+    }
+  }
+  .user__profile--share {
+    width: 62%;
+    img {
+    padding-right: 1em;
+    width: 20px;
+    }
+  }
+}
