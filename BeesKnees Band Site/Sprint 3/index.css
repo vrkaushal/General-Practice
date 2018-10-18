@@ -1,0 +1,416 @@
+@media (max-width: 1200px) {
+  .textFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .musicSection__Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact__Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#AboutSection, #MusicSection, #GallerySection, .CommentSection, .ContactsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px;
+}
+
+.section__Header {
+  display: block;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#heroBannerSection {
+  background-image: url(./Assets/ana-grave-156852-unsplash.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-size: 84px;
+}
+
+.header__Title {
+  display: inline-block;
+  width: 70%;
+  padding-left: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.header__Button1, .header__Button2 {
+  display: inline-block;
+  width: 10%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.header__Button1 {
+  color: white;
+}
+
+.header__Button2 {
+  color: #d7d7d7;
+}
+
+#hero__Title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#hero__Title2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.buttonText {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: inline-block;
+  width: 198px;
+  height: 55px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  cursor: pointer;
+  margin: 5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.textFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+.About__Textbox--left, .About__Textbox--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10%;
+}
+
+.About__Textbox--left {
+  width: 33%;
+}
+
+.About__Textbox--right {
+  width: 66%;
+  margin-left: auto;
+}
+
+#MusicSection {
+  background-color: #f9f9f9;
+}
+
+.musicSection__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.musicSection__Pic {
+  padding-right: 8%;
+}
+
+.musicSection__Text {
+  font-size: 24px;
+}
+
+#albumName {
+  margin-top: 0;
+}
+
+#GallerySection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.picture1, .picture2, .picture3, .picture4, .picture5, .picture6, .picture7, .picture8, .picture9, .picture10, .picture11, .picture12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 285px;
+  width: 285px;
+  margin: 10px;
+}
+
+.picture1 {
+  background-image: url("./Assets/ian-dooley-281855-unsplash.jpg");
+}
+
+.picture2 {
+  background-image: url("./Assets/ana-grave-156852-unsplash.jpg");
+}
+
+.picture3 {
+  background-image: url("./Assets/hanny-naibaho-388579-unsplash.jpg");
+}
+
+.picture4 {
+  background-image: url("./Assets/bryan-minear-315773-unsplash.jpg");
+}
+
+.picture5 {
+  background-image: url("./Assets/mike-giles-5655-unsplash.jpg");
+}
+
+.picture6 {
+  background-image: url("./Assets/melanie-van-leeuwen-83775-unsplash.jpg");
+}
+
+.picture7 {
+  background-image: url("./Assets/francisco-moreno-110533-unsplash.jpg");
+}
+
+.picture8 {
+  background-image: url("./Assets/felix-russell-saw-106848-unsplash.jpg");
+}
+
+.picture9 {
+  background-image: url("./Assets/paulette-wooten-223050-unsplash.jpg");
+}
+
+.picture10 {
+  background-image: url("./Assets/wesley-tingey-223059-unsplash (1).jpg");
+}
+
+.picture11 {
+  background-image: url("./Assets/abigail-keenan-83615-unsplash.jpg");
+}
+
+.picture12 {
+  background-image: url("./Assets/ciprian-boiciuc-330413-unsplash.jpg");
+}
+
+#ShowsSection {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./Assets/hanny-naibaho-388579-unsplash.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./Assets/hanny-naibaho-388579-unsplash.png");
+  color: white;
+  background-size: cover;
+}
+
+#showHeader {
+  color: white;
+  padding: 50px;
+  margin: 0;
+}
+
+.showList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.showList__Row {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #D7d7d7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#lastRow {
+  border: none;
+  margin-bottom: 100px;
+}
+
+#showPlace {
+  font-weight: normal;
+}
+
+#showLocation {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.CommentSection {
+  background-color: #f9f9f9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#textInput1 {
+  height: 40px;
+  width: 590px;
+  margin-bottom: 25px;
+}
+
+#textInput2 {
+  margin-bottom: 25px;
+}
+
+#postCommentButton {
+  padding: 20px, 40px;
+  margin-bottom: 15px;
+  border: black;
+  border-radius: 4px;
+  display: inline-block;
+  width: 198px;
+  height: 55px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+#comment__container {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#comment__msg {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 600px;
+}
+
+.ContactsSection {
+  background-color: #272727;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.socialMedia__Icons {
+  margin: 100px;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.bolded {
+  font-weight: bolder;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.copyright {
+  font-size: 10px;
+  margin: 25px;
+  margin-left: 0px;
+}
+/*# sourceMappingURL=index.css.map */
