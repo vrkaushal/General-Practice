@@ -1,0 +1,50 @@
+.list, ul {
+  border: dashed thin black;
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 14px;
+}
+
+ul {
+  background-color: lightsalmon;
+}
+
+h1 {
+  border: solid 4px #D2691E;
+  font-family: Arial;
+}
+
+li {
+  font-weight: bold;
+}
+
+.snack-list li {
+  background-color: lightsalmon;
+  color: teal;
+}
+
+.cold-drink-list {
+  background-color: aquamarine;
+}
+
+#cold-drink-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+#hot-drink-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+#snack-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.hot-drink-list {
+  background-color: #DC143C;
+}
+/*# sourceMappingURL=style.css.map */

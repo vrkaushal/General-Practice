@@ -1,0 +1,83 @@
+body {
+  font-family: Poppins;
+  margin: 0px;
+}
+
+.header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+.logo {
+  width: 18vw;
+  height: 13vh;
+}
+
+.heroBanner {
+  background-image: url("header-background.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroText {
+  text-align: center;
+  color: rgba(74, 141, 241, 0.966);
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translateY(-50%);
+}
+
+.belowHeroBanner {
+  display: flex;
+  padding-top: 5vh;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  font-size: 22px;
+  color: blue;
+}
+
+.Courses {
+  justify-content: space-between;
+}
+
+.coursesHeader {
+  padding-left: 3vw;
+  font-size: 32px;
+  color: blue;
+}
+
+.courseList {
+  font-size: 22px;
+  display: flex;
+  width: 20vw;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.courseBox {
+  margin-left: 0vw;
+  margin-right: 3vw;
+  display: flex;
+}
+
+.specificCourse {
+  padding: 50px;
+  padding-top: 3px;
+  padding-left: 25px;
+  border: solid;
+  border-radius: 5px;
+  border-width: thin;
+}
+/*# sourceMappingURL=style.css.map */

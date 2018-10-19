@@ -1,0 +1,168 @@
+/* Box-sizing border-box */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header__item--left {
+    display: none;
+  }
+  header .header__item--right {
+    display: none;
+  }
+  .hero {
+    height: 40vw;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: #999999;
+  border-bottom: solid 1px;
+  z-index: 10;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+}
+
+.header__item--logo {
+  font-size: 2rem;
+}
+
+.header__item--left {
+  padding-left: 20px;
+}
+
+.header__item--right {
+  padding-right: 20px;
+}
+
+.hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  text-align: center;
+  border-bottom: solid 1px #666666;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 35px;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: #eeeeee;
+  box-shadow: 3px 3px 3px #aaaaaa;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  flex: 0 0 100%;
+  justify-self: center;
+  text-align: center;
+}
+
+.card-title {
+  flex: 0 0 100%;
+  text-align: center;
+  border-top: dashed 1px #555555;
+  padding-top: 15px;
+}
+
+.activity-list {
+  background: #dddddd;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.activity-list > * {
+  flex: 0 0 100%;
+}
+
+.activity-item {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #999999;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #999999;
+  border-top: solid 1px #666666;
+  padding: 25px;
+}
+
+.header-left {
+  align-self: left;
+}
+
+.header-right {
+  align-self: right;
+}
+
+.footer-left {
+  align-self: right;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-left, .header-right {
+    display: none;
+  }
+  .hero {
+    height: 40vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

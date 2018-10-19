@@ -1,0 +1,17 @@
+body {
+    background-color: lavenderblush;
+}
+p{
+    font-family: cursive;
+    font-size: 20px;
+    color: brown;
+}
+.coolwords{
+    color: bisque;
+}
+.title{
+    color: darkslategrey;
+}
+#picture{
+    border-style: outset;
+}

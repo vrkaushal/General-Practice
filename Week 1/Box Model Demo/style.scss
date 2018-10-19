@@ -1,0 +1,13 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: maroon; 
+    margin: 25px;
+    padding: 20px 5px 15px 10px;
+    display: inline-block;
+
+}
+#nudged{
+    position: relative;
+    top: 20px;
+}

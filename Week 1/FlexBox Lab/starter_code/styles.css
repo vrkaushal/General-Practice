@@ -1,0 +1,122 @@
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+@media (max-width:980px){
+	.logo{
+		color: white;
+	}
+}
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	padding: 10px;
+}
+
+header {
+	height: 50px;
+	background: #999999;
+	border-bottom: solid 1px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.header-left, .header-right, .logo {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	font-size: 2rem;
+}
+
+.header-left {
+	padding-left: 20px;
+}
+
+.header-right {
+	padding-right: 20px;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background: #eeeeee;
+	text-align: center;
+	border-bottom: solid 1px #666666;
+}
+
+main {
+	display: flex;
+}
+
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 35px;
+}
+
+.card {
+	width: 150px;
+	height: 200px;
+	margin: 10px;
+	background: #eeeeee;
+	box-shadow: 3px 3px 3px #aaaaaa;
+	border-radius: 5px;
+}
+
+.card-content {
+	text-align: center;
+	padding: 50px;
+}
+
+.card-title {
+	text-align:center;
+	border-top: dashed 1px #555555;
+	padding-top: 15px;
+}
+
+.activity-list {
+	background: #dddddd;
+	padding: 20px;
+}
+
+.activity-list > * {
+}
+
+.activity-item {
+	text-align: center;
+	font-weight: bold;
+	padding-top:70px;
+	width: 300px;
+	height: 150px;
+	background: white;
+	margin: 10px 0;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #999999;
+}
+
+footer {
+	background: #999999;
+	border-top: solid 1px #666666;
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-left {
+}
+
+.header-right {
+}
+
+.footer-left {
+}

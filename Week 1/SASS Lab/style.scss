@@ -1,0 +1,51 @@
+$color1: beige;
+$color2: #D2691E;
+$color3: lightsalmon;
+$color4: rgb(127,255,212);
+$color5: #DC143C;
+$color6: black;
+@mixin daily-special {
+    font-weight: normal;
+    font-style: italic;
+}
+.list{
+    border: dashed thin $color6;
+}
+
+h2{
+    font-family:cursive;
+    font-size: 14px;
+}
+ul{
+    background-color: $color3;
+}
+h1{
+    border: solid 4px $color2;
+    font-family: Arial;
+}
+li{
+    font-weight: bold;
+}
+.snack-list li{
+    background-color: $color3;
+    color: teal;
+}
+.cold-drink-list{
+    background-color: $color4;
+}
+#cold-drink-special{
+    @include daily-special
+}
+#hot-drink-special{
+    @include daily-special
+}
+#snack-special{
+    @include daily-special
+}
+.hot-drink-list{
+    background-color: $color5;
+}
+ul{
+    @extend .list;
+}
+

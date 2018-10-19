@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Roboto;
+    }
+    .header {
+      background: rgba(46, 85, 122, 0.747);
+      color: white;
+    }
+
+    header {
+      display: inline-block;
+      width: 45%;
+      padding-left: 20px;
+    }
+
+    nav {
+      display: inline-block;
+      width: 45%;
+      text-align: right;
+    }
+    .navlink{
+      font-weight: bold;
+      color: white;
+      padding-left: 8px;
+    }
+    h2 {
+      background: rgba(109, 144, 179, 0.589);
+      color: white;
+      padding: 10px;
+    }
+
+    h3{
+      text-align: center;
+    }
+
+    .buttonStyle {
+      font-size: 18px;
+    }
+
+    #jumbotron {
+      background-image: url('assets/jumbotron.jpg');
+      background-size: cover;
+      height: 400px;
+      text-align: center;
+      padding-top: 200px;
+    }
+
+    #heroText {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    .service {
+      display: inline-block;
+      width: 30%;
+      margin-right: 25px;
+    }
+
+    .serviceImage {
+      border-radius: 50%;
+      box-shadow: 5px 10px rgba(109, 144, 179, 0.589);
+      max-width: 100%;
+    }
+
+    .testimonial {
+      display: inline-block;
+      width: 30%;
+      text-align: center;
+      margin: 0px 15px;
+    }
+
+    .testimonial-img {
+      max-width: 75%;
+      max-height: 250px;
+      box-shadow: 10px 5px 10px rgba(109, 144, 179, 0.589);
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 100%" class="header">
+    <header>
+      <h1>DesignerApp.io</h1>
+    </header>
+    <nav>
+      <a href="#about" class="navlink">About</a>
+      <a href="#services"class="navlink">Services</a>
+      <a href="#testimonials"class="navlink">Testimonials</a>
+      <a href="#contact"class="navlink">Contact</a>
+    </nav>
+  </div>
+  <section id="jumbotron">
+    <div id="heroText">Apps. Professionally Designed.</div>
+  </section>
+  <a name="about" />
+  <section id="about">
+    <h2>About</h2>
+    <div>
+        <div style="display: inline-block; width: 45%">
+        <h3>We Love Designing Web Apps!</h3>
+        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          </p>
+        <br>
+        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+        <br>
+        <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+        </div>
+        <div style="display: inline-block; width: 45%">
+          <div>
+          <img src="assets/laptop.jpg" width="200" />
+        </div>
+          <button class="buttonStyle">Find Out More</button>
+          <button class="buttonStyle">Contact Us</button>
+        </div>
+    </div>
+  </section>
+  <a name="service" />
+  <section id="services">
+    <h2>Services</h2>
+    <div>
+      <div class="service">
+          <img src="assets/laptop-closeup.jpg" class="serviceImage" />
+        <h3>Web Apps</h3>
+        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="service">
+          <img src="assets/laptop-closeup.jpg" class="serviceImage" />
+          <h3>Mobile Apps</h3>
+          <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+          <button>Buy Now</button>
+      </div>
+      <div class="service">
+          <img src="assets/laptop-closeup.jpg" class="serviceImage" />
+          <h3>Digital Marketing</h3>
+          <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+          <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <a name="testimonials" />
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+        <img src="assets/john.jpg" class="testimonial-img" />
+      <h3>John Smith</h3>
+      <p style="font-size: 10px; font-style: italic">President, FunApps Ltd</p>
+      <p>"Bring to the table win-win survival strategies to ensure proactive domination."</p>
+    </div>
+    <div class="testimonial">
+      <img src="assets/kim.jpg" class="testimonial-img" />
+      <h3>Kim Kane</h3>
+      <p style="font-size: 10px; font-style: italic">CEO, InnovationLabs Co.</p>
+      <p>"Bring to the table win-win survival strategies to ensure proactive domination."</p>
+    </div>
+  </section>
+  <a name="contact" />
+  <section id="contact">
+    <h2>Contact</h2>
+    <div style="display: inline-block"><img src="assets/google-maps.jpg" width="800"></div>
+    <div style="display: inline-block; text-align: right;">
+      <h3>Contact Form</h3>
+      <form>
+        Name: <input type="text" /><br/>
+        Email: <input type="email" /><br/>
+        Message: <textarea></textarea><br/>
+        <button>Contact us</button>
+      </form>
+
+    </div>
+  </section>
+  <footer style="background: darkblue; color: #aaaaaa; padding:25px">
+    Copyright DesignerApp.io 2018
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.containing-block {
+    width: 100vh;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #258AFD;
+  }
+  .contained-element {
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    background-color: darkgray;
+  }
