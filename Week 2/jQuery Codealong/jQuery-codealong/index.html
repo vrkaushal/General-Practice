@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>jQuery | BrainStation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-container"></div>
+            <div id="bg-container--gradient"></div>
+            <div id="bg-container--solid"></div>
+        <div class="login-container">
+            <div class="login-inner">
+                <div class="login-header">
+                    <div class="avatar-container">
+                        <img id='avatar' src='assets/female.png' alt="avatar"/>
+                    </div>
+                    <h5 id='greeting'>Welcome to Splice!</h5>
+                    <span>Sign in to your account.</span>
+                </div>
+
+                <div class="login-form">
+                    <form class='form-container' autocomplete="off">
+                        <div class="form-col">
+                            <div class="input" id='username-outer'>
+                                <input placeholder='Username' id="username" type="text"/>
+                                <i class="fas fa-times hide" id='username-error'></i>
+                            </div>
+                            <div class="input" id='password-outer'>
+                                <input placeholder='Password' id="password" type="password"/>
+                                <i class="fas fa-times hide" id='password-error'></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <a href='http://brainstation.io'><span>Forgot Password?</span></a>
+                            <button id='form-btn'>Sign In</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="login-footer">
+                    <span id='social'>Connect With</span>
+                    <a class="btn-floating social-btn" id='facebook-btn' href='http://facebook.com'><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-floating social-btn" id='twitter-btn'  href='http://twitter.com'><i class="fab fa-twitter"></i></a>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="home-container">
+            <form class="home-content">
+                    <i class="far fa-check-circle fa-7x"></i>
+                    <h3>SUCCESS!</h3>
+                    <p>You have completed the jQuery Codealong.</p>
+                    <button type='submit' id='content-complete--btn'>Continue</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+    <!--
+        1. Import jQuery cdn.
+
+        2. Add a script tag or import your javascript file into this HTML file.
+              - Add the function that waits for the DOM to be completed before it runs your jQuery.
+              - Add let user = {name: 'jQueryJunkie', password: 'javascript'}; to your script tag or js file.
+
+        3. Edit the h5 tag with the id of 'greeting' to say 'Welcome to' the array / string method of your choice.
+
+        4. Change the background colour of the button with the id of 'form-btn' when user hovers over it.
+              - Remember to change it back to its original colour when the user is no longer hovering over
+              the button.
+
+        5. Target the image tag with the id=avatar and change the source attribute to an image of your choice 
+           from the assets/avatars folder.
+
+        6. When the submit button is clicked, check if username and password matches user object. 
+              - To stop the page from reloading, you use must event.preventDefault() at the beginning of your  
+              click event handler.
+              - If it doesn't match, remove the class 'hide' and add the class 'error' to the appropiate input field.
+              - If it does match, call the fadeOut function and animate the two angled backgrounds until they are off
+              the screen. It is recommended to animate the pink background to the left and the white background downwards.
+
+        function fadeOut(){
+            $('.login-container').animate({opacity: 0});
+            setTimeout(()=>{
+                $('.home-container').css({'z-index':3})
+             }, 1000)
+        }
+
+        Diving Deeper
+            - Try taking the value of the username and append it on the success page to congratulate the user on successfully
+            completing the codealong.   
+    -->
+</body>
+</html>
