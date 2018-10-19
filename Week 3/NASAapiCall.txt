@@ -1,0 +1,22 @@
+NASA API key: M1cT6j2rEZ9RNjX3tWeGjWq7TpVE9tV04PUUYgR9
+
+Astronomy picture of the day link:
+
+GET https://api.nasa.gov/planetary/apod
+
+
+
+let request = fetch("https://api.nasa.gov/planetary/apod?api_key=sk3UhK7XD2qTwPOtYEK4Ry97zKYQlmsFayxqFZ5S");
+
+console.log(request);
+
+
+request.then((response) => {
+  console.log(response);
+  let jsonPromise = response.json();
+  
+jsonPromise.then((json) => {
+    console.log(typeof json);
+    console.log(json);
+  });
+});

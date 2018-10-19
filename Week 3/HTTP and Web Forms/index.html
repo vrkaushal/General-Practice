@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FishFindr App</h1>
+    <form action='http://localhost:57233' method='GET' id='fishForm'>
+        <div>
+            <label>
+                type your name:
+                <input type='text' name='nameInput' placeholder='type your name here'/>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                your life story:
+                <textarea name='bioInput' rows='10' cols='80' placeholder='type your bio here'></textarea>
+            </label>
+        </div>
+
+        <div>
+            <input type="radio" value='fresh' name='waterType' />fresh
+            <input type='radio' value='salt' name='waterType' />salt
+        </div>
+
+        <select name='dietInput'>
+            <option value='herbivore'>herbivore</option>
+            <option value='omnivore'>omnivore</option>
+            <option value='carnivore'>carnivore</option>
+        </select>
+
+        <input type='submit'value='find me a fish!'/>
+        <input type='hidden' name='signupSource' value='fish landing page' />
+
+
+    </form>
+
+    <script>
+        function fishFormHandler(e){
+            e.preventDefault();
+
+            var form= e.target;
+
+            var nameValue = e.target.nameInput.value;
+            var waterValue = e.target.waterInput.value;
+
+            console.log('form was submitted!');
+        }
+            // 1. go and grab the DOM object for the thing you are targeting
+            var form = document.getElementById('fishForm');
+            // 2. now that you ahve the thing, do something with it!
+            form.addEventListener('submit', fishFormHandler);
+    </script>
+</body>
+</html>
